@@ -15,7 +15,7 @@ const useStyles = () => ({
     }
 });
 
-const processingSteps = ['Generating images 👨🏽‍🎨', 'Doing fancy calculations ✨'];
+const processingSteps = ['Generation en cours 👨🏽‍🎨', 'Calculs fantaisistes en cours ✨'];
 
 const LoadingSpinner = ({classes, isLoading}) => {
     const [textIdx, setTextIdx] = useState(0);
