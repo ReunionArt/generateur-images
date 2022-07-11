@@ -4,7 +4,7 @@ import { Typography, Checkbox } from "@material-ui/core";
 const NotificationCheckbox = ({ isNotificationOn, setNotifications }) => {
     // Check if the browser doesn't support notifications
     if (!("Notification" in window)) {
-        console.log("This browser does not support notifications.");
+        console.log("Ce navigateur ne prend pas en charge les notifications.");
         return null
     }
 
@@ -24,8 +24,8 @@ const NotificationCheckbox = ({ isNotificationOn, setNotifications }) => {
 
     return (
         <Typography variant="caption" color="textSecondary">
-            <Checkbox label="Notify me when images are generated" checked={isNotificationOn} onChange={handleCheckboxChange} />
-            Notify me when images are generated
+            <Checkbox label="M'avertir lorsque les images sont générées" checked={isNotificationOn} onChange={handleCheckboxChange} />
+            M avertir lorsque les images sont generees
         </Typography>
     )
 }
