@@ -12,7 +12,7 @@ const GeneratedImageList = ({ classes, generatedImages, generatedImagesFormat, p
     const ImageObject = ({ imgData, promptText, index }) => {
         const imgSrc = `data:image/${generatedImagesFormat};base64,${imgData}`
         const alt = `${promptText} ${index}`
-        const title= "Download image"
+        const title= "Télécharger l'image"
         const downloadedFilename = `${promptText}_${index}.${generatedImagesFormat}`
         
         return (
