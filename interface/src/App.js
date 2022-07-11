@@ -127,13 +127,13 @@ const App = ({ classes }) => {
         <div className={classes.root}>
             <div className={classes.title}>
                 <Typography variant="h3">
-                    DALL-E Playground <span role="img" aria-label="sparks-emoji">✨</span>
+                    RICL Generateur d images <span role="img" aria-label="sparks-emoji">✨</span>
                 </Typography>
             </div>
 
             {!validBackendUrl && <div>
                 <Typography variant="body1" color="textSecondary">
-                    Put your DALL-E backend URL to start
+                    Inserez votre URL DALL-E backendpour commencer
                 </Typography>
             </div>}
 
@@ -156,10 +156,10 @@ const App = ({ classes }) => {
                             <FormControl className={classes.imagesPerQueryControl}
                                 variant="outlined">
                                 <InputLabel id="images-per-query-label">
-                                    Images to generate
+                                    Images a generer
                                 </InputLabel>
                                 <Select labelId="images-per-query-label"
-                                    label="Images per text prompt" value={imagesPerQuery}
+                                    label="Images par texte" value={imagesPerQuery}
                                     disabled={isFetchingImgs}
                                     onChange={(event) => setImagesPerQuery(event.target.value)}>
                                     {Array.from(Array(imagesPerQueryOptions).keys()).map((num) => {
@@ -168,7 +168,7 @@ const App = ({ classes }) => {
                                         </MenuItem>
                                     })}
                                 </Select>
-                                <FormHelperText>More images = More time to generate</FormHelperText>
+                                <FormHelperText>Plus d images = Plus de temps de generation</FormHelperText>
                             </FormControl>
                         </CardContent>
                     </Card>
