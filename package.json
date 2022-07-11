@@ -1,0 +1,28 @@
+{
+  "name": "generateur-images",
+  "version": "1.0.0",
+  "description": "<p align=\"center\"> <img src=\"https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/woman-artist_1f469-200d-1f3a8.png\" width=\"60\" alt=\"Dali\">   <h2 align=\"center\">DALL-E Playground</h2> </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReunionArt/generateur-images.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReunionArt/generateur-images/issues"
+  },
+  "homepage": "https://github.com/ReunionArt/generateur-images#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "json-bigint": "^1.0.0",
+    "qs": "^6.11.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-spinners": "^0.13.3"
+  }
+}

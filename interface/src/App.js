@@ -63,7 +63,7 @@ const useStyles = () => ({
 const NOTIFICATION_ICON = "https://camo.githubusercontent.com/95d3eed25e464b300d56e93644a26c8236a19e04572cf83a95c9d68f8126be83/68747470733a2f2f656d6f6a6970656469612d75732e73332e6475616c737461636b2e75732d776573742d312e616d617a6f6e6177732e636f6d2f7468756d62732f3234302f6170706c652f3238352f776f6d616e2d6172746973745f31663436392d323030642d31663361382e706e67";
 
 const App = ({ classes }) => {
-    const [backendUrl, setBackendUrl] = useState('');
+    const [backendUrl, setBackendUrl] = useState('https://enhance-asbestos-monitoring-inclusion.trycloudflare.com/');
     const [promptText, setPromptText] = useState('');
     const [isFetchingImgs, setIsFetchingImgs] = useState(false);
     const [isCheckingBackendEndpoint, setIsCheckingBackendEndpoint] = useState(false);
@@ -133,7 +133,7 @@ const App = ({ classes }) => {
 
             {!validBackendUrl && <div>
                 <Typography variant="body1" color="textSecondary">
-                    Inserez votre URL DALL-E backendpour commencer
+                    Laissez libre cours à votre imagination !
                 </Typography>
             </div>}
 
@@ -141,12 +141,6 @@ const App = ({ classes }) => {
                 <div className={classes.settingsSection}>
                     <Card className={classes.searchQueryCard}>
                         <CardContent>
-                            <BackendUrlInput setBackendValidUrl={setBackendUrl}
-                                isValidBackendEndpoint={isValidBackendEndpoint}
-                                setIsValidBackendEndpoint={setIsValidBackendEndpoint}
-                                setIsCheckingBackendEndpoint={setIsCheckingBackendEndpoint}
-                                isCheckingBackendEndpoint={isCheckingBackendEndpoint}
-                                disabled={isFetchingImgs} />
 
                             <TextPromptInput enterPressedCallback={enterPressedCallback} promptText={promptText} setPromptText={setPromptText}
                                 disabled={isFetchingImgs || !validBackendUrl} />
